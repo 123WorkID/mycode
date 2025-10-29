@@ -1,0 +1,10 @@
+---
+- name: Use the APOD role to download more images
+  hosts: localhost
+  roles:
+    - role: alta3.nasa_api.apod_downloader
+      vars:
+        apod_api_key: kscAaZ81lCDrDYcUkeGrgL7mukpMnckUZrueVOsw
+        apod_count: 5
+        apod_download_dir: /home/student/custom_apod_images
+
